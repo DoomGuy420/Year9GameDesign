@@ -93,7 +93,6 @@ while gameScore == 1:
     textgamelib.printDivider("-", 40)
     wakeUp = 0
     while wakeUp == 0:
-        playsound('alarmclockbeeping.mp3', block=False)
         getUpChapter1 = input("Time to get up\n")
         if "get up" in getUpChapter1.lower():
             wakeUp += 1
@@ -123,7 +122,6 @@ while gameScore == 1:
     turnOnLights = 0
     while turnOnLights == 0:
         if "turn on" in chapter1Challenge.lower() and ("lights" in chapter1Challenge.lower() or "light" in chapter1Challenge.lower() or "light switch" in chapter1Challenge.lower()):
-            playsound('lightswitchclick.mp3')
             print("Nothing happened")
             turnOnLights += 1
         elif "turn on" in chapter1Challenge.lower():
