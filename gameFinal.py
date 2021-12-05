@@ -333,6 +333,9 @@ while gameScore == 3:
                 gotBeef = True
                 print("You got the beef and left the room")
                 textgamelib.printDivider("-", 40)
+            elif "Get Beans" in actionGetBeef and fridgeOpen == True:
+                print("You took out the beens and wanted to get your dad to make them for lunch but you looked at the expiration date and it had passed. \nYou put back the beans sadly")
+                textgamelib.printDivider("-", 40)
             elif "get beef" in actionGetBeef.lower() and fridgeOpen == False:
                 print("You don't see the beef. \nTry opening the fridge.")
                 textgamelib.printDivider("-", 40)
